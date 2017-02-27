@@ -22,8 +22,8 @@ private:
   uint8_t pin;
   unsigned long last_step_time;
   unsigned int interval;
-  uint8_t color;
-  uint8_t to_color;
+  uint16_t color;
+  uint16_t to_color;
   unsigned int duration;
   float percent_done;
   curve_function curve;
@@ -41,10 +41,10 @@ private:
     void set_value(int pwm);
 
     // Get the current LED PWM value
-    uint8_t get_value();
+    uint16_t get_value();
 
     // Get the PWM value we're fading to
-    uint8_t get_target_value();
+    uint16_t get_target_value();
     
     // Set curve to transform output
     void set_curve(curve_function);
@@ -53,7 +53,7 @@ private:
     curve_function get_curve();
 
     // Fade an LED to a PWM value over a duration of time (milliseconds)
-    void fade(uint8_t pwm, unsigned int time);
+    void fade(uint16_t pwm, unsigned int time);
 
 
     // Returns TRUE if there is an active fade process
