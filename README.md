@@ -30,8 +30,8 @@ Fade an LED on pin 3 up in 3 seconds.
 LEDFader led = LEDFader(3);
 
 void setup() {
-  // Fade from 0 - 255 in 3 seconds
-  led.fade(255, 3000);
+  // Fade from 0 - 1023 in 3 seconds
+  led.fade(1023, 3000);
 }
 
 void loop() {
@@ -49,7 +49,7 @@ Building on that example, we can alternate by fading up and down
 LEDFader led = LEDFader(3);
 
 void setup() {
-  led.fade(255, 3000);
+  led.fade(1023, 3000);
 }
 
 void loop() {
@@ -58,12 +58,12 @@ void loop() {
   if (led.is_fading() == false) {
 
     // Fade from 255 - 0
-    if (led.get_value() == 255) {
+    if (led.get_value() == 1023) {
       led.fade(0, 3000);
     }
     // Fade from 0 - 255
     else {
-      led.fade(255, 3000);
+      led.fade(1023, 3000);
     }
   }
 }
@@ -106,7 +106,7 @@ void loop() {
 
       // Up
       if (led->get_value() == 0) {
-        byte color = random(100, 255);
+        byte color = random(100, 1023);
         led.fade(color, duration);
       }
       // Down
