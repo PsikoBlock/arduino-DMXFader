@@ -28,7 +28,7 @@ uint8_t LEDFader::get_pin(){
 
 void LEDFader::set_value(int value) {
   if (!pin) return;
-  color = (uint8_t)constrain(value, 0, 255);
+  color = (uint8_t)constrain(value, 0, 1023);
   if (curve)
    analogWrite(pin, curve(color));
   else
@@ -95,7 +95,7 @@ void LEDFader::fade(uint8_t value, unsigned int time) {
   }
 
   duration = time;
-  to_color = (uint8_t)constrain(value, 0, 255);
+  to_color = (uint16_t)constrain(value, 0, 1023);
 
   // Figure out what the interval should be so that we're chaning the color by at least 1 each cycle
   // (minimum interval is MIN_INTERVAL)
