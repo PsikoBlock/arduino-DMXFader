@@ -8,7 +8,7 @@
 #ifndef CURVE_H
 #define	CURVE_H
 
-#include <avr/pgmspace.h>
+#include <pgmspace.h>
 
 class Curve {
  static const uint8_t etable[] PROGMEM;
