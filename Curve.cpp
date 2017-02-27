@@ -115,7 +115,7 @@ const uint16_t Curve::etable[1024] PROGMEM = {
 };
 
 
-uint8_t Curve::exponential(uint8_t i) {
+uint8_t Curve::exponential(uint16_t i) {
  // If the compiler could build the above table for us, we could have "simply":
  //return !i ? 0 : round(exp(log(MAXOUTPUT) * i / MAXINPUT));
  
@@ -123,10 +123,10 @@ uint8_t Curve::exponential(uint8_t i) {
  return pgm_read_byte(&etable[i]);
 }
 
-uint16_t Curve::linear(uint8_t i) {
+uint16_t Curve::linear(uint16_t i) {
  return i;
 }
 
-uint16_t Curve::reverse(uint8_t i) {
+uint16_t Curve::reverse(uint16_t i) {
  return 1023-i;
 }
