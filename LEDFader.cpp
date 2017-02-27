@@ -75,7 +75,7 @@ void LEDFader::faster(int by) {
   percent_done = cached_percent;
 }
 
-void LEDFader::fade(uint8_t value, unsigned int time) {
+void LEDFader::fade(uint16_t value, unsigned int time) {
   stop_fade();
   percent_done = 0;
 
