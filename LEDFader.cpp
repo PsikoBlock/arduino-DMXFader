@@ -28,7 +28,7 @@ uint8_t LEDFader::get_pin(){
 
 void LEDFader::set_value(int value) {
   if (!pin) return;
-  color = (uint8_t)constrain(value, 0, 1023);
+  color = (uint16_t)constrain(value, 0, 1023);
   if (curve)
    analogWrite(pin, curve(color));
   else
