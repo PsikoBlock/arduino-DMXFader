@@ -35,11 +35,11 @@ void LEDFader::set_value(int value) {
   analogWrite(pin, color);
 }
 
-uint8_t LEDFader::get_value() {
+uint16_t LEDFader::get_value() {
   return color;
 }
 
-uint8_t LEDFader::get_target_value() {
+uint16_t LEDFader::get_target_value() {
   return to_color;
 }
     
