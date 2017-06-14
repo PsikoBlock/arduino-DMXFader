@@ -13,9 +13,9 @@
 class Curve {
  static const uint16_t etable[] PROGMEM;
 public:
- static uint16_t exponential(uint8_t);
- static uint16_t linear(uint8_t);
- static uint16_t reverse(uint8_t);
+ static uint16_t exponential(uint16_t);
+ static uint16_t linear(uint16_t);
+ static uint16_t reverse(uint16_t);
 };
 
 #endif	/* CURVE_H */
