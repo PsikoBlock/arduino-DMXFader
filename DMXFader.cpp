@@ -3,7 +3,7 @@
  *
  *  Created on: Sep 24, 2013
  *      Author: jeremy
- *  Modified by PsikoBlock on 2017-07-23
+ *  Modified by PsikoBlock (Filipp Roos) on 2017-07-23
  */
 
 #include "DMXFader.h"

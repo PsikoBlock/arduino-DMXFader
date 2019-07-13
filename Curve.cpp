@@ -3,6 +3,7 @@
  * Author: cameron
  * 
  * Created on October 22, 2013, 1:07 AM
+ * Modified by PsikoBlock (Filipp Roos) on 2017-07-23
  */
 
 #include "Curve.h"
