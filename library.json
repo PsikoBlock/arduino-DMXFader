@@ -1,0 +1,18 @@
+{
+  "name": "DMXFader",
+  "keywords": "esp8266, dmx, fading, led, natural",
+  "description": "Arduino library to fade DMX channels in the background without blocking your main program. For use with ESP8266 and the ESP-Dmx library.",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/PsikoBlock/arduino-DMXFader"
+  },
+  "dependencies": {
+    "name": "ESPDMX",
+    "authors": "Rick",
+    "frameworks": "arduino"
+  },
+  "frameworks": "arduino",
+  "platforms": "espressif",
+  "version": "1.0"
+}
