@@ -1,18 +1,21 @@
 #######################################
-# Syntax Coloring Map for OneButton
+# Syntax Coloring Map for D
 #######################################
 
 #######################################
 # Datatypes (KEYWORD1)
 #######################################
 
-LEDFader	KEYWORD1
+DMXFader	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-set_pin	KEYWORD2
+set_channel	KEYWORD2
+get_channel	KEYWORD2
+set_universe	KEYWORD2
+get_universe	KEYWORD2
 set_value	KEYWORD2
 get_value	KEYWORD2
 get_target_value	KEYWORD2
